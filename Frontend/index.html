@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Real Time Multi Route Optimizer</title>
+
+  <!-- MapLibre CSS -->
+  <link href="https://unpkg.com/maplibre-gl@3.6.0/dist/maplibre-gl.css" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <div class="header">
+    Real Time Multi Route Optimizer
+  </div>
+
+  <!-- Main Layout -->
+  <div class="main">
+
+    <!-- Left Panel -->
+    <div class="left-panel">
+
+      <div class="input-section">
+
+        <div class="field">
+          <label>Starting Point</label>
+          <input type="text" id="start" placeholder="Enter starting location">
+        </div>
+
+        <div class="swap-btn" id="swap">⇅</div>
+
+        <div class="field">
+          <label>Destination</label>
+          <input type="text" id="end" placeholder="Enter destination">
+        </div>
+
+        <button id="findRoutes">Find Routes</button>
+
+      </div>
+
+      <!-- Routes -->
+      <div class="routes">
+        <h3>Available Routes</h3>
+        <!-- Route cards will appear here later -->
+      </div>
+
+    </div>
+
+    <!-- Right Panel (Map) -->
+    <div class="map-panel">
+      <div id="map"></div>
+    </div>
+
+  </div>
+
+  <!-- MapLibre JS -->
+  <script src="https://unpkg.com/maplibre-gl@3.6.0/dist/maplibre-gl.js"></script>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
